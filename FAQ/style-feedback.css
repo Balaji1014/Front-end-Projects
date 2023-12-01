@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    /* background: url("./Emarald-Logo-Vector.png"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    height: 98%;
+    width: 690px;
+    flex-direction: column;
+    background-image: linear-gradient(to right top, #051937, #004871, #007d9e, #00b4b4, #12ebb2);
+    border-radius: 20px;
+    box-shadow: 0 20px 25px rgb(0, 0, 0);
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(10px);
+  
+}
+
+h1{
+    margin: 22px 22px;
+    position: absolute;
+    top: 30px;
+    text-align: center;
+    overflow: hidden;
+    text-shadow: 2px 3px 0px #ffffff;
+    line-height: 1.2;
+
+}
+h5{
+    margin: 22px 22px;
+    position: absolute;
+    top: 85px;
+    text-align: center;
+    overflow: hidden;
+}
+.container .textarea-box{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 68%;
+    position: relative;
+    top: 39px;
+    width: 84%;
+    border: none;
+    border-radius: 10px;
+
+}
+.container .textarea-box textarea{
+
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 5px;
+    width: 90%;
+    margin: 20px 0;
+    border: none;
+    border-left: 3px solid #000000;
+    border-bottom: 3px solid #000000; 
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.textarea-box span{
+
+    font-weight: bold;
+}
+.container .btn{
+    color: #fff8f8;
+}
+.container button{
+    position: relative;
+    top: 50px;
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px;
+    background: transparent;
+    color:rgb(0, 0, 0);
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+    transition: 0.5s linear;
+    break-before: 2;
+    z-index: 1;
+}
+
+.container button:hover{
+    columns: rgb(0, 0, 0);
+}
+.container button:after {
+    content: "";
+    background: rgb(0, 0, 0);
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   .container button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+@media (max-width: 540px){
+    h1{
+        font-size: 25px;
+        position: absolute;
+        top: 6;
+        text-align: center;
+        overflow: hidden;
+    
+    }
+    h5{
+        font-size: 9px;
+        top: 86px;
+        position: absolute;
+        text-align: center;
+        overflow: hidden;
+    }
+    .textarea-box span{
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 720px){
+    h1{
+        font-size: 22px;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        overflow: hidden;
+    
+    }
+    h5{
+        font-size: 9px;
+        top: 70px;
+        position: absolute;
+        text-align: center;
+        overflow: hidden;
+    }
+    .textarea-box span{
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
