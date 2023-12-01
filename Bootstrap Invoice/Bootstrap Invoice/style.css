@@ -1,0 +1,73 @@
+
+.card-body{
+
+    background-color: rgb(0, 0, 0);
+    
+}
+.input-group{
+
+    box-shadow: 0 7px 25px rgba(255, 255, 255, 0.387);
+}
+
+
+.table-responsive{
+
+    border-radius: 5px;
+    box-shadow: 0 7px 25px rgba(255, 255, 255, 0.467);
+    max-height: 650px;
+    table-layout: fixed;
+    border-collapse:collapse;
+}
+thead tr, th{
+    position:sticky;
+    top: 0 ;
+    background-color:#e4e4e4;
+    color: #000000;
+    font-size: 17px;
+    text-align: center;
+    vertical-align: super;
+}
+
+td{
+    text-align: center;
+    vertical-align: super;
+    color: white;
+}
+
+tr:hover td{
+    color: #ffffff;
+    cursor: pointer;
+    background:#606060
+}
+
+.card .card-header{
+    background-color:#dad9d9;
+    box-shadow: 0 7px 25px rgb(255, 255, 255);
+}
+.input-group input:focus-visible {
+
+    outline: 4px solid rgb(20, 127, 220);
+    border-radius: 5px; 
+}
+.input-group select:focus-visible {
+
+    outline: 4px solid rgb(20, 127, 220);
+    border-radius: 5px; 
+}
+
+@media (max-width:991px){
+    .card-body{
+
+        overflow-x: auto;
+    }
+    .table{
+       
+        overflow-x: auto;
+    }
+
+    .input-group .form-control{
+
+        max-width: 100%;
+        
+    }
+}
