@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    color: aliceblue;
+
+}
+body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        height: 100vh;
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+        background-position: center;
+}
+h1{
+
+    position: relative;
+    top: 20px;
+}
+.container{
+    position: relative;
+    background: linear-gradient(360deg, rgb(129, 170, 140), rgb(13, 36, 24));
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 20px 25px rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    width: 768px ;
+    max-width: 100%;
+    overflow: hidden;
+    min-height: 600px;
+    padding-top: 10px;
+    animation: form 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+.form-container{
+
+    position: absolute;
+    top: 0%;
+    height: 100%;
+}
+.signup-container{
+    left: 0;
+    width: 50%;
+    z-index: 1;
+}
+ 
+.container form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 35px 30px;
+    
+}
+.input-box{
+    position: relative;
+    top: 50px;
+    width: 250px;
+    margin: 22px 0;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+    background: transparent;
+    color: #ffffff;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-weight: bold;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #ffffff;
+
+}
+
+.input-box input:focus~label,.input-box input:valid~label{
+
+    top: -3px;
+
+}
+.input-box input{
+
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    padding: 0 35px 0 5px;
+    
+}
+.container button{
+    position: relative;
+    left: -53px;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    margin: 35px 0;
+    padding: 10px;
+    background: transparent;
+    color:rgb(255, 255, 255);
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+    transition: 0.2s linear;
+    break-before: 2;
+}
+.container button:hover{
+    letter-spacing: 5px;
+   
+    background: coral
+}
