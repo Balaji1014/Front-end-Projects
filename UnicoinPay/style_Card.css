@@ -1,0 +1,248 @@
+    *{
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        text-decoration: none;
+        
+    }
+    
+    .container{
+        min-height: 100vh;
+        background: linear-gradient(360deg, rgb(129, 170, 140), rgb(13, 36, 24));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        padding-bottom: 60px;
+        
+    }
+    
+    .container form{
+        /* Transparent Container */
+        background: rgba(225, 225, 225, 0.35); 
+        border-radius: 20px;
+        box-shadow: 0 15px 20px rgb(0, 0, 0, 0.3);
+        padding: 20px;
+        width: 600px;
+        padding-top: 10px;
+        animation: form 1s ease-in-out;
+    }
+    @keyframes form{
+
+        0%{
+            transform: translateY(-10%);
+        }
+    }
+    .container form .inputBox{
+    
+        margin-top: 20px;
+    }
+    
+    .container form .inputBox span{
+        font-weight: bold;
+        display: block;
+        color: #01472b;
+        padding-bottom: 5px;
+     }
+     .container form .inputBox input,
+     .container form .inputBox select{
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid rgb(0, 0, 0, 0.3);
+        color: black;
+     }
+     .container form .inputBox .cvv-img{
+        display: flex;
+        margin-left: 125px;
+        margin-top: -35px;
+        align-items:flex-end;    
+     }
+     .container form .inputBox .cvv-img:hover{
+    
+        display: block;
+     }
+     
+     .container form .inputBox .img{
+        display: flex;
+        margin-left: 500px;
+        margin-top: -39px;
+       
+     }
+     .container form .flexbox {
+    
+        display: flex;
+        gap: 15px;
+     }
+     .container form .flexbox .inputBox{
+        flex: 1 1 150px;
+    
+     }
+     .container form .submit-btn{
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+        background: linear-gradient(45deg, rgb(21, 114, 41), rgb(20, 255, 137));
+        color:rgb(7, 7, 7);
+        border-radius: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        overflow: hidden;
+        cursor: pointer;
+        z-index: 1;
+        box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12x #ffffff;
+        transition: 0.2s linear;
+        break-before: 2;
+        
+    }
+    .container form .submit-btn::before{
+        content: "";
+        width: 0;
+        height: 3em;
+        border-radius: 30em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+        transition: 0.5s ease;
+        display: block;
+        z-index: -1;
+
+    }
+
+    .container form .submit-btn:hover::before{
+        width: 9em;
+        letter-spacing: 3px;
+
+    }
+
+    .container form .submit-btn:hover{
+        letter-spacing: 3px;
+        opacity: 0.7;
+    }
+
+    .container .image img{
+
+        margin: 20px 20px 20px;
+        margin-top: 20px;
+        animation: logo 1s ease-in-out;
+    }
+    @keyframes logo{
+        0%{
+            transform: translateY(-100%);
+        }
+    }
+    
+    @media screen and (max-width:600px){
+        
+        
+        .container{
+            min-height: 100vh;
+            background: linear-gradient(360deg, rgb(129, 170, 140), rgb(13, 36, 24));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
+            padding-bottom: 60px;
+            
+        }
+        
+        .container form{
+            /* Transparent Container */
+            background: rgba(225, 225, 225, 0.35); 
+            border-radius: 20px;
+            box-shadow: 0 15px 20px rgb(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 450px;
+            padding-top: 10px;
+            animation: form 1s ease-in-out;
+        }
+        @keyframes form{
+    
+            0%{
+                transform: translateY(-10%);
+            }
+        }
+        .container form .inputBox{
+        
+            margin-top: 20px;
+        }
+        
+        .container form .inputBox span{
+            font-weight: bold;
+            display: block;
+            color: #01472b;
+            padding-bottom: 5px;
+         }
+         .container form .inputBox input,
+         .container form .inputBox select{
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid rgb(0, 0, 0, 0.3);
+            color: black;
+         }
+         .container form .inputBox .cvv-img{
+            display: flex;
+            margin-left: 90px;
+            margin-top: -30px;
+            align-items:flex-end;    
+         }
+         .container form .inputBox .cvv-img:hover{
+        
+            display: block;
+         }
+         
+         .container form .inputBox .img{
+            display: flex;
+            margin-left: 365px;
+            margin-top: -37px;
+           
+         }
+         .container form .flexbox {
+        
+            display: flex;
+            gap: 15px;
+         }
+         .container form .flexbox .inputBox{
+            flex: 1 1 150px;
+        
+         }
+         .container form .submit-btn{
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            background: linear-gradient(45deg, rgb(21, 114, 41), rgb(20, 255, 137));
+            color:rgb(7, 7, 7);
+            border-radius: 15px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s linear;
+            break-before: 2;
+            
+        }
+        .container form .submit-btn:hover{
+            letter-spacing: 3px;
+            opacity: 0.7;
+        }
+        
+        .container .image img{
+    
+            margin: 20px 20px 20px;
+            margin-top: 20px;
+            animation: logo 1s ease-in-out;
+        }
+        @keyframes logo{
+            0%{
+                transform: translateY(-100%);
+            }
+        }
+        
+    }
+
+
+    
