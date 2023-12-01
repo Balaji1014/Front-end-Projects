@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" type="text/css" href="./style_forgot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container" id="forgot">
+        <form action="">
+            <h2>Forgot Password</h2>
+            <h4>( Enter your E-Mail Address )</h4>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required id="email">
+                <label for="email">Email</label>
+            </div>
+            <a class="btn" onclick="showToast(successmsg)" href="./otp.html"> Get OTP</a>
+            <!-- <a class="button" onclick="showToast(successmsg)" href="">Get OTP</a>  -->
+            <div class="back_to_login"> 
+                <a href="./index.html">Back to Login</a>
+            </div>   
+        </form>
+    </div>  
+    <div id="notification">
+        
+    </div>
+
+    <!-- For Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+    <script src="/forgot.js">
+        
+    </script>
+</body>
+</html>

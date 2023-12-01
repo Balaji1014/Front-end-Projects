@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="./style_otp.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <a class="close" href="./forgot.html"> X </a>
+            <div class="otp">
+                <span class="title">OTP Verification</span>
+                <p class="description">Please enter the code we have sent you. </p>
+            </div>
+            <div class="otp-inputs">
+                <input type="tel" placeholder="" maxlength="1">
+                <input type="tel" placeholder="" maxlength="1">
+                <input type="tel" placeholder="" maxlength="1">
+                <input type="tel" placeholder="" maxlength="1">
+            </div>
+            <a class="verify" href="./resetpasssword.html">Verify</a>
+            <p class="resend">You don't receive the code ? <a class="resend" href=""> Re-Send</a></p>
+        </form>
+    </div>
+    <script>
+        let notification = document.getElementById('notification');
+        let successmsg = ' <ion-icon name="checkbox"></ion-icon> OTP Sent Successfully ! ';
+        function showToast(msg){
+            let toast = document.createElement('div');
+            toast.classList.add('toast');
+            toast.innerHTML = msg;   
+            notification.appendChild(toast); 
+
+            setTimeout(() => {
+                toast.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
